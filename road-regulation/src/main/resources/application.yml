@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+#Spring Boot configuration
+spring:
+  application:
+    name: road-regulation
+  mvc:
+    format:
+      date-time: iso
+  datasource:
+    url: jdbc:postgresql://localhost:5432/road-regulation_db
+    username: postgres
+    password: Dev@010184
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
